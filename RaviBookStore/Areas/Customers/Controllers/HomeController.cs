@@ -1,14 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RaviBookStore.Models;
+using RaviBookStore.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RaviBookStore.Controllers
+namespace RaviBookStore.Area.Customer.Controllers
 {
+    [Area("Customers")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
