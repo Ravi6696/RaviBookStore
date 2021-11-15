@@ -1,4 +1,4 @@
-using Abp.Domain.Uow;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RaviBooks.DataAccess.Repository;
+using RaviBooks.DataAccess.Repository.IRepository;
 using RaviBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,7 @@ namespace RaviBookStore
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
             services.AddControllersWithViews();
         }
 
