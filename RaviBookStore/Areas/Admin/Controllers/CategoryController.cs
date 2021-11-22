@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using RaviBooks.DataAccess.Repository.IRepository;
 using RaviBooks.Models;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -39,6 +40,29 @@ namespace RaviBookStore.Areas.Admin.Controllers
             return View();
 
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                if (category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(category);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(category);
+        }
+
+
 
         #region API CALLS
         [HttpGet]
