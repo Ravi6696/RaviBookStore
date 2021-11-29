@@ -14,10 +14,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
   </ItemGroup>
 
-	<ImportGroup>
-		<Folder Include="Data\" />
-		<Folder Include="Repository\IRpository\" />
-	</ImportGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RaviBooks.Models\RaviBooks.Models.csproj" />
