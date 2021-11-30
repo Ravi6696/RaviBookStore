@@ -128,6 +128,7 @@ try for 4 days to solve this problem
 11:34 add CoverTypeRepository class 
 11:37 add ICoverTypeRepository interface
 11:39 add cover type in UnitOfWork
+11:40 add cover type in IUnitOfWork
  
 
 
