@@ -130,6 +130,8 @@ try for 4 days to solve this problem
 11:39 add cover type in UnitOfWork
 11:40 add cover type in IUnitOfWork
 12:29 create  migration database and update databse for covertype
+12:36 add cover type in nav bar
+
  
 
 
