@@ -136,10 +136,41 @@ try for 4 days to solve this problem
 
 08:40 add product class
 08:45 add migration --- 20211202135403_addProductToDb
-8:50 update database
-09:15 add product repo
-09:26 add product repository
-09:82 add product to unitof work
+08:50 update database
+08:55 In the SOE review the newly created Products table
+09:15 Update the Product class 
+09:18 add product repository
+09:20 Add IProductRepository Interface
+09:25 Add ProductRepository Class and update methid
+09:28 add product to unitofwork
+09:30 add product to Iunitofwork
+09:40 run project and solve error
+10:00 Add Product Controller
+10:15 Add the IWebHostEvironment call and its using statement to the Microsoft.AspNetCore.Hosting 
+10:20 change class to public ProductController method
+10:22 Create a ViewModel in the Models project 
+10:25 select list for Category and CoverType
+10:28 Modify the ProductVM 
+10:35 intall the Microsoft.AspNetCore.Mvc.ViewFeatures package.
+10:40 Modify the ProductController 
+10:41 include the using statements to the ViewModels 
+10:45 Comment out the Upsert post method
+10:48 Modify the API call to include the Category and CoverType properites
+10:51 Add an Index view
+10:56 create product.js file
+11:00 Modify the _Layout.cshtml to add a new link to Product
+11:05 Run the application 
+11:10 Create an Upsert.cs for Products
+11:15 using the API key provided, initialize and add a function to validate input
+11:20 run application
+11:24 Add a new folder and subfolder in wwwroot > images/products
+11:30 In the ProductController configure the Product Upsert Post action method
+11:33 Uncomment the method and modify 
+
+
+
+ 
+
 
 
  
