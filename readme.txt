@@ -132,6 +132,13 @@ try for 4 days to solve this problem
 12:29 create  migration database and update databse for covertype
 12:36 add cover type in nav bar
 
+12-02-2021
+
+08:40 add product class
+08:45 add migration --- 20211202135403_addProductToDb
+8:50 update database
+
+
  
 
 
