@@ -136,7 +136,7 @@ try for 4 days to solve this problem
 
 08:40 add product class
 08:45 add migration --- 20211202135403_addProductToDb
-8:50 update database
+8:50 update databas
 
 
  
