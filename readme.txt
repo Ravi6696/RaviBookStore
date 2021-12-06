@@ -167,6 +167,14 @@ try for 4 days to solve this problem
 11:30 In the ProductController configure the Product Upsert Post action method
 11:33 Uncomment the method and modify 
 
+12/6/2021
+
+12:30 Add code on index file for home view
+12:40 add code in homecontroller for view
+12:45 add data in product file
+12:50 run the project
+15:52 sucesfully completed project
+
 
 
  
